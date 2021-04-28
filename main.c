@@ -4,6 +4,11 @@
 #include "generic.h"
 #include "device.h"
 #include "mass_storage.h"
+#include "fatfs.h"
+#include <stdlib.h>
+
+#define DEFAULT_DELAY 100
+#define LEN 20
 
 int main()
 {
@@ -16,7 +21,17 @@ int main()
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
 
 	DWT_Delay_Init();
+
 	MSD_Init();
+
+	FatFs_Init();
+	const char* filename = "file1.txt";
+	file_open(filename);
+	char line[LEN] = {0};
+	file_readline(line, LEN);
+	uint32_t delay = atoi(line);
+
+	delay = delay ? delay : DEFAULT_DELAY;
 
 	while (1)
 	{

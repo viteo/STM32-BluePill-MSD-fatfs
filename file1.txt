@@ -1,0 +1,2 @@
+500
+Change the number above and save. Then reset device via button or replug it.
