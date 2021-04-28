@@ -3,6 +3,7 @@
 #include "stm32f10x_rcc.h"
 #include "generic.h"
 #include "device.h"
+#include "mass_storage.h"
 
 int main()
 {
@@ -15,6 +16,7 @@ int main()
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
 
 	DWT_Delay_Init();
+	MSD_Init();
 
 	while (1)
 	{

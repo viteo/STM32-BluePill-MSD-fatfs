@@ -86,6 +86,10 @@
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/spl/inc}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/device}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/USB-FS-Device_Lib}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/USB_Mass_Storage/inc}&quot;"/>
                                     								
                                 </option>
                                 								
